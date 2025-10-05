@@ -8,10 +8,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.lab_week_06.model.CatModel
 import com.example.lab_week_06.model.CatBreed
 import com.example.lab_week_06.model.Gender
+import androidx.recyclerview.widget.ItemTouchHelper
 
 class MainActivity : AppCompatActivity() {
 
     private val recyclerView: RecyclerView by lazy { findViewById(R.id.recycler_view) }
+
 
     private val catAdapter by lazy {
         CatAdapter(layoutInflater, GlideImageLoader(this), object : CatAdapter.OnClickListener {
@@ -25,6 +27,8 @@ class MainActivity : AppCompatActivity() {
 
         recyclerView.adapter = catAdapter
         recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        val itemTouchHelper = ItemTouchHelper(catAdapter.swipeToDeleteCallback)
+        itemTouchHelper.attachToRecyclerView(recyclerView)
 
         catAdapter.setData(
             listOf(
