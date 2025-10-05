@@ -34,9 +34,17 @@ class MainActivity : AppCompatActivity() {
             listOf(
                 CatModel(Gender.Male, CatBreed.BalineseJavanese, "Fred", "Silent and deadly", "https://cdn2.thecatapi.com/images/7dj.jpg"),
                 CatModel(Gender.Female, CatBreed.ExoticShorthair, "Wilma", "Cuddly assassin", "https://cdn2.thecatapi.com/images/egv.jpg"),
-                CatModel(Gender.Unknown, CatBreed.AmericanCurl, "Curious George", "Award winning investigator", "https://cdn2.thecatapi.com/images/bar.jpg")
+                CatModel(Gender.Unknown, CatBreed.AmericanCurl, "Curious George", "Award winning investigator", "https://cdn2.thecatapi.com/images/bar.jpg"),
+                CatModel(Gender.Male, CatBreed.ExoticShorthair, "Tom", "Loves sleeping all day", "https://cdn2.thecatapi.com/images/bpc.jpg"),
+                CatModel(Gender.Female, CatBreed.BalineseJavanese, "Luna", "Loves chasing laser pointers", "https://cdn2.thecatapi.com/images/MTY3ODIyMQ.jpg"),
+                CatModel(Gender.Female, CatBreed.AmericanCurl, "Mochi", "Cuddly and playful", "https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg"),
+                CatModel(Gender.Male, CatBreed.ExoticShorthair, "Leo", "Friendly neighborhood cat", "https://cdn2.thecatapi.com/images/4r0.jpg"),
+                CatModel(Gender.Male, CatBreed.AmericanCurl, "Simba", "Likes to nap in the sun", "https://cdn2.thecatapi.com/images/9ep.jpg"),
+                CatModel(Gender.Female, CatBreed.BalineseJavanese, "Nala", "Always hungry for treats", "https://cdn2.thecatapi.com/images/MTgwODA1OQ.jpg"),
+                CatModel(Gender.Unknown, CatBreed.ExoticShorthair, "Shadow", "Mysterious and quiet", "https://cdn2.thecatapi.com/images/8q2.jpg")
             )
         )
+
     }
 
     private fun showSelectionDialog(cat: CatModel) {
